@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220907 11:48:38.396" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="/home/dmd-pc-testeur/VSCode Projects/Auto Amazon Robot Framework/tests">
+<suite id="s1-s1" name="Main" source="/home/dmd-pc-testeur/VSCode Projects/Auto Amazon Robot Framework/tests/main.robot">
+<kw name="Begin Web Test" library="common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220907 11:48:38.486" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220907 11:48:38.485" endtime="20220907 11:48:39.357"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220907 11:48:39.357" endtime="20220907 11:48:39.460"/>
+</kw>
+<status status="PASS" starttime="20220907 11:48:38.485" endtime="20220907 11:48:39.460"/>
+</kw>
+<test id="s1-s1-t1" name="Voir Produits Disponibles" line="10">
+<kw name="Charger La Page Web" library="PageAccueil">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${GOOGLE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220907 11:48:39.462" level="INFO">Opening url '= https://www.google.com/'</msg>
+<msg timestamp="20220907 11:48:39.550" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220907 11:48:39.550" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+#0 0x55d9e7b3b693 &lt;unknown&gt;
+#1 0x55d9e79349db &lt;unknown&gt;
+#2 0x55d9e792195c &lt;unknown&gt;
+#3 0x55d9e792022d &lt;unknown&gt;
+#4 0x55d9e79203b2 &lt;unknown&gt;
+#5 0x55d9e79366ee &lt;unknown&gt;
+#6 0x55d9e799ecaf &lt;unknown&gt;
+#7 0x55d9e798a922 &lt;unknown&gt;
+#8 0x55d9e799e4b0 &lt;unknown&gt;
+#9 0x55d9e798a743 &lt;unknown&gt;
+#10 0x55d9e7960533 &lt;unknown&gt;
+#11 0x55d9e7961715 &lt;unknown&gt;
+#12 0x55d9e7b8b7bd &lt;unknown&gt;
+#13 0x55d9e7b8ebf9 &lt;unknown&gt;
+#14 0x55d9e7b70f2e &lt;unknown&gt;
+#15 0x55d9e7b8f9b3 &lt;unknown&gt;
+#16 0x55d9e7b64e4f &lt;unknown&gt;
+#17 0x55d9e7baeea8 &lt;unknown&gt;
+#18 0x55d9e7baf052 &lt;unknown&gt;
+#19 0x55d9e7bc971f &lt;unknown&gt;
+#20 0x7f8c2a30bb43 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220907 11:48:39.462" endtime="20220907 11:48:39.551"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Google</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220907 11:48:39.551" endtime="20220907 11:48:39.551"/>
+</kw>
+<status status="FAIL" starttime="20220907 11:48:39.461" endtime="20220907 11:48:39.552"/>
+</kw>
+<kw name="Chercher Le Site Web" library="PageAccueil">
+<status status="NOT RUN" starttime="20220907 11:48:39.552" endtime="20220907 11:48:39.552"/>
+</kw>
+<kw name="Naviger vers le site Amazon" library="PageAccueil">
+<status status="NOT RUN" starttime="20220907 11:48:39.552" endtime="20220907 11:48:39.552"/>
+</kw>
+<kw name="Rechercher un produit" library="PageAccueil">
+<status status="NOT RUN" starttime="20220907 11:48:39.552" endtime="20220907 11:48:39.552"/>
+</kw>
+<status status="FAIL" starttime="20220907 11:48:39.461" endtime="20220907 11:48:39.552">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+#0 0x55d9e7b3b693 &lt;unknown&gt;
+#1 0x55d9e79349db &lt;unknown&gt;
+#2 0x55d9e792195c &lt;unknown&gt;
+#3 0x55d9e792022d &lt;unknown&gt;
+#4 0x55d9e79203b2 &lt;unknown&gt;
+#5 0x55d9e79366ee &lt;unknown&gt;
+#6 0x55d9e799ecaf &lt;unknown&gt;
+#7 0x55d9e798a922 &lt;unknown&gt;
+#8 0x55d9e799e4b0 &lt;unknown&gt;
+#9 0x55d9e798a743 &lt;unknown&gt;
+#10 0x55d9e7960533 &lt;unknown&gt;
+#11 0x55d9e7961715 &lt;unknown&gt;
+#12 0x55d9e7b8b7bd &lt;unknown&gt;
+#13 0x55d9e7b8ebf9 &lt;unknown&gt;
+#14 0x55d9e7b70f2e &lt;unknown&gt;
+#15 0x55d9e7b8f9b3 &lt;unknown&gt;
+#16 0x55d9e7b64e4f &lt;unknown&gt;
+#17 0x55d9e7baeea8 &lt;unknown&gt;
+#18 0x55d9e7baf052 &lt;unknown&gt;
+#19 0x55d9e7bc971f &lt;unknown&gt;
+#20 0x7f8c2a30bb43 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-s1-t2" name="Ajouter un produit au panier" line="16">
+<kw name="Choisir un produit" library="PageProduit">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220907 11:48:42.554" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220907 11:48:39.553" endtime="20220907 11:48:42.554"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]/div/div/div/div/div[2]/div[2]/h2/a</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20220907 11:48:42.661" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220907 11:48:42.661" level="FAIL">Element with locator 'xpath://*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]/div/div/div/div/div[2]/div[2]/h2/a' not found.</msg>
+<status status="FAIL" starttime="20220907 11:48:42.554" endtime="20220907 11:48:42.661"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]/div/div/div/div/div[2]/div[2]/h2/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220907 11:48:42.661" endtime="20220907 11:48:42.661"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Ajouter à votre liste</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220907 11:48:42.661" endtime="20220907 11:48:42.661"/>
+</kw>
+<status status="FAIL" starttime="20220907 11:48:39.553" endtime="20220907 11:48:42.662"/>
+</kw>
+<kw name="Choisir la couleur" library="PageProduit">
+<status status="NOT RUN" starttime="20220907 11:48:42.662" endtime="20220907 11:48:42.662"/>
+</kw>
+<kw name="Ajouter produit au panier" library="PageProduit">
+<status status="NOT RUN" starttime="20220907 11:48:42.662" endtime="20220907 11:48:42.662"/>
+</kw>
+<status status="FAIL" starttime="20220907 11:48:39.553" endtime="20220907 11:48:42.662">Element with locator 'xpath://*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[5]/div/div/div/div/div[2]/div[2]/h2/a' not found.</status>
+</test>
+<kw name="End Web Test" library="common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220907 11:48:42.663" endtime="20220907 11:48:42.719"/>
+</kw>
+<status status="PASS" starttime="20220907 11:48:42.663" endtime="20220907 11:48:42.719"/>
+</kw>
+<status status="FAIL" starttime="20220907 11:48:38.406" endtime="20220907 11:48:42.719"/>
+</suite>
+<status status="FAIL" starttime="20220907 11:48:38.397" endtime="20220907 11:48:42.720"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Main">Tests.Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
